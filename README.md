@@ -1,1 +1,1 @@
-THIS FOLDER HAS THE EXERCISE for minishell
+THIS FOLDER HAS THE EXERCISE for minishell qwerty
