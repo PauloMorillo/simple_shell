@@ -147,4 +147,3 @@ julien@ubuntu:~/c/shell$
 [Paulo Morillo](https://github.com/PauloMorillo)
 
 [Edgar Miguel Rodriguez Garcia](https://github.com/Miguelro123)
-[FEATURE] Adding man file
