@@ -8,6 +8,10 @@ Is a Holberton school group project. The task is to write a simple UNIX command 
 
 *************************************************************************
 
+# Description
+This repo has a simple implementation of the standard command interpreter for the system that receives comands from the standard input or a file.
+(Mini Shell) This version has many features that make it similar in some aspects to the standard shell, but it is a simple program to learn its operation. Only some standard shell features have been incorporated.
+
 ## Requirements
 ### General
 
