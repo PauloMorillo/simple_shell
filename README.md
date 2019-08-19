@@ -105,3 +105,7 @@ hsh main.c shell.c test_ls_2
 $
 ```
 *******************************************************************************
+## Authors
+[Paulo Morillo](https://github.com/PauloMorillo)
+
+[Edgar Miguel Rodriguez Garcia](https://github.com/Miguelro123)
