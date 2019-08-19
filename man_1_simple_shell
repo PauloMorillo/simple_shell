@@ -10,7 +10,8 @@ Part of a project at holberton school.
 
 .SH DESCRIPTION
 
-Simple_shell is a simple implementation of the standard command interpreter for the system that receives comands from the standard input or a file. This version has many features that make it similar in some aspects to the standard shell, but it is a simple program to learn its operation. Only some standard shell features have been incorporated.
+Simple_shell is a simple implementation of the standard command interpreter for the system that receives comands from the standard input or a file.
+This version has many features that make it similar in some aspects to the standard shell, but it is a simple program to learn its operation. Only some standard shell features have been incorporated.
 
 .Sh Examples
 
