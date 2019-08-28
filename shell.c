@@ -31,7 +31,7 @@ int main(int argc, char *argv[], char **env)
 		if (*lineptr != '\n')
 		{
 			strt = tokenizeline(lineptr, env);
-			if (_strcmp(strt[0], "env") != 0)
+			if (_strcmp(strt[0], "env") != 0 && _strcmp(strt[0], "\n") != 0)
 			{
 				path = getpath(env);
 				patht = tokenpath(path, copy);
