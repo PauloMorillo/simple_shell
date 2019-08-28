@@ -1,4 +1,4 @@
-BBB<p>
+<p>
 <img width="260" height="90" src="https://uploads-ssl.webflow.com/5b0fe6b5acd20859e6fbac66/5b1641a1e46275621a2b436d_Holberton-Logo-final.png" align="right" >
 </p>
 
@@ -37,7 +37,7 @@ $
 
 ## List of allowed functions and system calls
 
-* `exit` (man 3 exit)
+* ```exit``` (man 3 exit)
 * `fork` (man 2 fork)
 * `free` (man 3 free)
 * `getline` (man 3 getline)
