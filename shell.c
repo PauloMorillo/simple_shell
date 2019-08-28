@@ -13,6 +13,7 @@ int main(int argc, char *argv[], char **env)
 	int tru = 1, flag = 0, counte = 0;
 	char *lineptr = NULL, *path = NULL, *copy = NULL;
 	char **patht, **strt;
+	(void)argc;
 
 	while (tru)
 	{
@@ -22,12 +23,6 @@ int main(int argc, char *argv[], char **env)
 		if (isatty(STDIN_FILENO))
 			write(STDIN_FILENO, "$ ", 2);
 		lenget = getline(&lineptr, &n, stdin);
-		if (lenget == -1)
-		{
-			if (argc != 1)
-				perror(argv[0]);
-			return (1);
-		}
 		if (lenget == EOF)
 		{
 			free(lineptr);
