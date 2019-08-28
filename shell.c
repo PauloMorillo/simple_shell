@@ -26,7 +26,7 @@ int main(int argc, char *argv[], char **env)
 		if (lenget == EOF)
 		{
 			free(lineptr);
-			exit(0);
+			exit(2);
 		}
 		if (*lineptr != '\n')
 		{
