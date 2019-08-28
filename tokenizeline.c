@@ -33,7 +33,7 @@ char **tokenizeline(char *lineptr, char **env)
 	{
 		free(lineptr);
 		free(toks1);
-		exit(127);
+		exit(0);
 	}
 	if (((_strcmp(toks1[0], "env") == 0) && toks1[1] == NULL))
 	{
