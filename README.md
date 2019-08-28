@@ -1,5 +1,5 @@
 <p>
-<img width="260" height="170" src="https://uploads-ssl.webflow.com/5b0fe6b5acd20859e6fbac66/5b1641a1e46275621a2b436d_Holberton-Logo-final.png" align="right" >
+<img width="360" height="170" src="https://uploads-ssl.webflow.com/5b0fe6b5acd20859e6fbac66/5b1641a1e46275621a2b436d_Holberton-Logo-final.png" align="right" >
 </p>
 
 
