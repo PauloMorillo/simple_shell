@@ -28,10 +28,10 @@ char **tokenizeline(char *lineptr, char **env)
 		/*printf("%s\n",toks[count]);*/
 		strt = strtok(NULL, delimi);
 	}
-	if (toks1[0] == NULL)
-	{
-		toks1[0] = "\n";
-	}
+	/* if (toks1[0] == NULL) */
+	/* { */
+	/*toks1[0] = "\n"; */
+	/* } */
 	if ((_strcmp(toks1[0], "exit") == 0) && toks1[1] == NULL)
 	{
 		free(lineptr);
