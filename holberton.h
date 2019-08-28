@@ -17,13 +17,13 @@ char *_strdup(char *str);
 void sigchld_handler(int sig);
 int _strcmp(char *s1, char *s2);
 void run_process(char **strt, char *nameexe, char *copy, int flag,
-int counte, char **env);
+		 int counte, char **env);
 int _putchar(char c);
 void _puts(char *str);
 void _printenv(char **environ);
 char *str_concat(char *s1, char *s2);
 void error(char *argv, int errortype, int counte, char *argu);
 int printerr(char *str);
-void printdi(int num);
+char *convert(unsigned int num, int base);
 int _strlen(char *s);
 #endif
