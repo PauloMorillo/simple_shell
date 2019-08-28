@@ -11,8 +11,9 @@ int main(int argc, char *argv[], char **env)
 	ssize_t lenget;
 	size_t n;
 	int tru = 1, flag = 0, counte = 0;
-	char *lineptr = NULL, *path = NULL, *copy = NULL;
-	char **patht, **strt;
+	char *lineptr = NULL, /*path = NULL*/*copy = NULL;
+	/*char patht,*/
+	char **strt;
 
 	while (tru)
 	{
@@ -31,9 +32,9 @@ int main(int argc, char *argv[], char **env)
 			strt = tokenizeline(lineptr, env);
 			if (_strcmp(strt[0], "env") != 0)
 			{
-				path = getpath(env);
-				patht = tokenpath(path, copy);
-				flag = _stat(strt, patht);
+				/* path = getpath(env); */
+				/* patht = tokenpath(path, copy); */
+				/* flag = _stat(strt, patht); */
 				/*printf("%s", strt[1]);*/
 				run_process(strt, argv[0], copy, flag, counte, env);
 			} else
