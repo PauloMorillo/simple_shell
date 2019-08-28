@@ -1,5 +1,5 @@
 <p>
-<img width="260" height="110" src="https://uploads-ssl.webflow.com/5b0fe6b5acd20859e6fbac66/5b1641a1e46275621a2b436d_Holberton-Logo-final.png" align="right" >
+<img width="260" height="90" src="https://uploads-ssl.webflow.com/5b0fe6b5acd20859e6fbac66/5b1641a1e46275621a2b436d_Holberton-Logo-final.png" align="right" >
 </p>
 
 
@@ -13,17 +13,8 @@ This repo has a simple implementation of the standard command interpreter for th
 (Mini Shell) This version has many features that make it similar in some aspects to the standard shell, but it is a simple program to learn its operation. Only some standard shell features have been incorporated.
 
 ## Requirements
-### General
 
-  - Allowed editors: vi, vim, emacs
-  - All your files will be compiled on Ubuntu 14.04 LTS
-  - Your programs and functions will be compiled with gcc 4.8.4 using the flags `-Wall` `-Werror` `-Wextra` and `-pedantic`
-  - All your files should end with a new line
-  - A `README.md` file, at the root of the folder of the project is mandatory
-Your code should use the `Betty` style. It will be checked using [`betty-style.pl`](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) and [`betty-doc.pl`](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
-  - No more than 5 functions per file
-  - All your header files should be include guarded
-  - Use system calls only when you need to ([`why?`](https://www.quora.com/Why-are-system-calls-expensive-in-operating-systems))
+
 ## More Info
 ### Output
 - Unless specified otherwise, your program __must have the exact same output__ as `sh` (`/bin/sh`) as well as the exact same error output.
@@ -49,12 +40,12 @@ $
 
 ## List of allowed functions and system calls
 
-- `exit` (man 3 exit)
-- `fork` (man 2 fork)
-- `free` (man 3 free)
-- `getline` (man 3 getline)
-- `malloc` (man 3 malloc)
-- `stat` (__xstat) (man 2 stat)
+* `exit` (man 3 exit)
+* `fork` (man 2 fork)
+* `free` (man 3 free)
+* `getline` (man 3 getline)
+* `malloc` (man 3 malloc)
+* `stat` (__xstat) (man 2 stat)
 
 ## Compilation
 Your shell will be compiled this way:
