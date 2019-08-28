@@ -31,7 +31,7 @@ int main(int argc, char *argv[], char **env)
 		if (*lineptr != '\n')
 		{
 			strt = tokenizeline(lineptr, env);
-			if (_strcmp(strt[0], "env") != 0)
+			if (_strcmp(strt[0], "env") != 0 && _strcmp(strt[0], "\n") != 0)
 			{
 				path = getpath(env);
 				patht = tokenpath(path, copy);
@@ -64,17 +64,16 @@ void sigchld_handler(int sig)
  */
 void error(char *argv, int errortype, int counte, char *argu)
 {
-	char *number = convert(counte, 10);
 
 	printerr(argv), printerr(": ");
 	if (errortype == 0)
 	{
-		printerr(number), printerr(": "), printerr(argu);
+		printdi(counte), printerr(": "), printerr(argu);
 		write(STDERR_FILENO, ": not found\n", 12);
 	}
 	else
 	{
-		printerr(number), printerr(": "),
+		printdi(counte), printerr(": "),
 			printerr(argu), printerr(": ");
 		perror(NULL);
 	}
@@ -92,22 +91,40 @@ int printerr(char *str)
 	return (i);
 }
 /**
- * convert - funcntion to convert int in char
- * @num: num to convert
- * @base: base
- * Return: pointer for print
+ * printdi - Function to print all the numbers integer or doubles.
+ * @num: number
+ * Return: digits numbers of an integer or a double
  */
-char *convert(unsigned int num, int base)
+void printdi(int num)
 {
-	static const char rep[] = "0123456789ABCDEF";
-	static char buffer[11];
-	char *ptr;
+	long int numtpr = 0;
+	int len = 0;
+	long int b = 0;
+	long int c = 1;
 
-	ptr = &buffer[10];
-	*ptr = '\0';
-	do {
-		*--ptr = rep[num % base];
-		num /= base;
-	} while (num != 0);
-	return (ptr);
+	numtpr = num;
+	if (numtpr < 0)
+	{
+		_putchar('-');
+		numtpr = numtpr * (-1);
+		len = 1;
+	}
+	while (c <= numtpr)
+	{
+		c = c * 10;
+	}
+	c = c / 10;
+	b = numtpr;
+	while (c > 0)
+	{
+		b = numtpr / c;
+		_putchar((b % 10) + '0');
+		c = c / 10;
+		len = len + 1;
+	}
+	if (numtpr == 0)
+	{
+		_putchar(0 + 48);
+		len = len + 1;
+	}
 }
