@@ -16,7 +16,8 @@ char **tokenpath(char *lineptr, char *copy);
 char *_strdup(char *str);
 void sigchld_handler(int sig);
 int _strcmp(char *s1, char *s2);
-void run_process(char **strt, char *nameexe, char *copy, int flag, int counte);
+void run_process(char **strt, char *nameexe, char *copy, int flag,
+int counte, char **env);
 int _putchar(char c);
 void _puts(char *str);
 void _printenv(char **environ);

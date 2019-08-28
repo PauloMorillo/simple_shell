@@ -35,7 +35,7 @@ int main(int argc, char *argv[], char **env)
 				patht = tokenpath(path, copy);
 				flag = _stat(strt, patht);
 				/*printf("%s", strt[1]);*/
-				run_process(strt, argv[0], copy, flag, counte);
+				run_process(strt, argv[0], copy, flag, counte, env);
 			} else
 			{
 				free(strt);

@@ -7,9 +7,11 @@
  * @copy: ponter copy to free path
  * @flag: flag to know when do free
  * @counte: count how many times sheel works
+ * @env: environ variables
  * Return: Do not return
  */
-void run_process(char **strt, char *nameexe, char *copy, int flag, int counte)
+void run_process(char **strt, char *nameexe, char *copy,
+int flag, int counte, char **env)
 {
 pid_t child_pid;
 int status;
@@ -22,7 +24,7 @@ int status;
 	}
 	if (child_pid == 0)
 	{
-		if (execve(strt[0], strt, NULL) == -1)
+		if (execve(strt[0], strt, env) == -1)
 		{
 			error(nameexe, 0, counte, strt[0]);
 			free(strt);
