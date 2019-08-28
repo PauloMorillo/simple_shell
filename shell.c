@@ -18,7 +18,9 @@ int main(int argc, char *argv[], char **env)
 	{
 		counte++;
 		signal(SIGINT, sigchld_handler);
-		write(STDIN_FILENO, "#cisfun$ ", 9);
+
+		if(isatty(STDIN_FILENO))
+			write(STDIN_FILENO, "$ ", 2);
 		lenget = getline(&lineptr, &n, stdin);
 		if (lenget == -1)
 		{
@@ -52,7 +54,7 @@ int main(int argc, char *argv[], char **env)
 void sigchld_handler(int sig)
 {
 	(void)sig;
-	write(STDIN_FILENO, "\n#cisfun$ ", 10);
+	write(STDIN_FILENO, "\n$ ", 3);
 }
 /**
  * error - funcntion to print error
