@@ -20,7 +20,7 @@ int status;
 	if (child_pid == -1)
 	{
 		perror(nameexe);
-		return;
+		exit(1);
 	}
 	if (child_pid == 0)
 	{
