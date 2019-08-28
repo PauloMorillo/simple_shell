@@ -24,6 +24,6 @@ void _printenv(char **environ);
 char *str_concat(char *s1, char *s2);
 void error(char *argv, int errortype, int counte, char *argu);
 int printerr(char *str);
-char *convert(unsigned int num, int base);
+void printdi(int num);
 int _strlen(char *s);
 #endif
