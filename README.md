@@ -37,7 +37,8 @@ $
 
 ## List of allowed functions and system calls
 
-* ```exit``` (man 3 exit)
+* `execve` (man 2 execve)
+* `exit`(man 3 exit)
 * `fork` (man 2 fork)
 * `free` (man 3 free)
 * `getline` (man 3 getline)
