@@ -14,7 +14,10 @@ char **tokenpath(char *path, char *copy)
 	/*toks = malloc(sizeof(char *) * counttok);*/
 	/*if (toks == NULL)*/
 	 /*	exit (1);*/
+	if (path[5] != ':')
+	{
 	copy = _strdup(path);
+
 		strt = strtok(copy, "=:");
 	/*printf("Esto es el path %s\n y esto es primera pos%s\n", path, strt);*/
 		for (count = 0; strt != NULL; count++)
@@ -23,8 +26,16 @@ char **tokenpath(char *path, char *copy)
 			/*printf("%s\n",toks[count]);*/
 			strt = strtok(NULL, "=:");
 		}
-	/*toks[count] = NULL;*/
+		if (toks[count - 1] == NULL)
+		{
+			toks[count - 1] = NULL;
+		}
 	/*free(path);*/
 	/*free(copy);*/
+	}
+	else
+	{
+		toks[1] = NULL;
+	}
 	return (toks);
 }

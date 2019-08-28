@@ -20,7 +20,7 @@ char **tokenizeline(char *lineptr, char **env)
 	/*printf("comparasion strings\n 1: %s 2:%s", lineptr, copyline);*/
 	/*toks = malloc(sizeof(char *) * counttok);*/
 	/*if (toks == NULL)*/
-	 /*	exit (1);*/
+	/*exit (1);*/
 	strt = strtok(lineptr, delimi);
 	for (count = 0; strt != NULL; count++)
 	{
@@ -28,7 +28,7 @@ char **tokenizeline(char *lineptr, char **env)
 		/*printf("%s\n",toks[count]);*/
 		strt = strtok(NULL, delimi);
 	}
-	toks1[count] = NULL;
+	/*toks1[count] = NULL;*/
 	if ((_strcmp(toks1[0], "exit") == 0) && toks1[1] == NULL)
 	{
 		free(lineptr);
