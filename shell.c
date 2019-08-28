@@ -19,7 +19,7 @@ int main(int argc, char *argv[], char **env)
 		counte++;
 		signal(SIGINT, sigchld_handler);
 
-		if(isatty(STDIN_FILENO))
+		if (isatty(STDIN_FILENO))
 			write(STDIN_FILENO, "$ ", 2);
 		lenget = getline(&lineptr, &n, stdin);
 		if (lenget == -1)
@@ -27,6 +27,11 @@ int main(int argc, char *argv[], char **env)
 			if (argc != 1)
 				perror(argv[0]);
 			return (1);
+		}
+		if (lenget == EOF)
+		{
+			free(lineptr);
+			exit(0);
 		}
 		if (*lineptr != '\n')
 		{
@@ -36,12 +41,10 @@ int main(int argc, char *argv[], char **env)
 				path = getpath(env);
 				patht = tokenpath(path, copy);
 				flag = _stat(strt, patht);
-				/*printf("%s", strt[1]);*/
 				run_process(strt, argv[0], copy, flag, counte, env);
 			} else
 			{
-				free(strt);
-			}
+				free(strt); }
 		}
 	}
 	return (0);
