@@ -28,7 +28,7 @@ char **tokenizeline(char *lineptr, char **env)
 		/*printf("%s\n",toks[count]);*/
 		strt = strtok(NULL, delimi);
 	}
-	/*toks1[count] = NULL;*/
+	toks1[count] = NULL;
 	if ((_strcmp(toks1[0], "exit") == 0) && toks1[1] == NULL)
 	{
 		free(lineptr);
