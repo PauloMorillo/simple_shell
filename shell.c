@@ -97,18 +97,12 @@ int printerr(char *str)
  */
 void printdi(int num)
 {
-	long int numtpr = 0;
-	int len = 0;
-	long int b = 0;
-	long int c = 1;
+	int numtpr = 0;
+	int b = 0;
+	int c = 1;
 
 	numtpr = num;
-	if (numtpr < 0)
-	{
-		_putchar('-');
-		numtpr = numtpr * (-1);
-		len = 1;
-	}
+
 	while (c <= numtpr)
 	{
 		c = c * 10;
@@ -118,13 +112,11 @@ void printdi(int num)
 	while (c > 0)
 	{
 		b = numtpr / c;
-		_putchar((b % 10) + '0');
+		_putchare((b % 10) + '0');
 		c = c / 10;
-		len = len + 1;
 	}
 	if (numtpr == 0)
 	{
-		_putchar(0 + 48);
-		len = len + 1;
+		_putchare(0 + 48);
 	}
 }
