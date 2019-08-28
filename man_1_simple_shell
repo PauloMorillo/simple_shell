@@ -1,1 +1,55 @@
-hi
+.TH hsh 1 "19 August 2019" "1.0" "Holberton simple_shell Manual"
+
+.SH NAME
+hsh \- Simple UNIX shell
+
+.SH SYNOPSIS
+.B ./hsh
+.I options are not available
+Part of a project at holberton school.
+
+.SH DESCRIPTION
+
+Simple_shell is a simple implementation of the standard command interpreter for the system that receives comands from the standard input or a file.
+This version has many features that make it similar in some aspects to the standard shell, but it is a simple program to learn its operation. Only some standard shell features have been incorporated.
+
+.Sh Examples
+
+This shell runs any executable file from the PATH environmental variable, because it prepends directories to the commands. It means that you can execute commands such as ls, pwd, which and so on.
+For full list of commands go to your directories of your PATH environmental variable. For example, /bin directory contains most of the commands, like ls, pwd, which and grep.
+
+.Nm ls -l /tmp
+    This input will result in the list of files and directories in /tmp directory in long format.
+
+.Nm pwd
+    This will print crrent working directory.
+
+.Nm echo
+    This will print specified text to stdout.
+
+.Nm BUILT-INS
+
+.Nm env
+    It is built-in command which will print environmental variables.
+
+.Nm setenv
+    A command which will set environmental variable.
+
+.Nm unsetenv
+    Unsets environmental variable.
+
+.Nm exit
+    Exits from the shell, it takes unsigned int as a exit status.
+
+.Nm help
+    Displays some info about how to use this simple shell.
+
+.SH BUGS
+No known bugs right now. Please report any bugs to the authors.
+
+.SH "SEE ALSO"
+man sh
+
+.SH "AUTHORS"
+Paulo Morillo <940@holbertonschool.com>
+Edgar Miguel Rodriguez Garcia <969@holbertonschool.com>
