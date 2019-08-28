@@ -12,9 +12,6 @@ Is a Holberton school group project. The task is to write a simple UNIX command 
 This repo has a simple implementation of the standard command interpreter for the system that receives comands from the standard input or a file.
 (Mini Shell) This version has many features that make it similar in some aspects to the standard shell, but it is a simple program to learn its operation. Only some standard shell features have been incorporated.
 
-## Requirements
-
-
 ## More Info
 ### Output
 - Unless specified otherwise, your program __must have the exact same output__ as `sh` (`/bin/sh`) as well as the exact same error output.
@@ -40,7 +37,7 @@ $
 
 ## List of allowed functions and system calls
 
-* ```exit``` (man 3 exit)
+* `exit` (man 3 exit)
 * `fork` (man 2 fork)
 * `free` (man 3 free)
 * `getline` (man 3 getline)
